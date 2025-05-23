@@ -1,0 +1,91 @@
+body {
+  font-family: "Microsoft JhengHei", Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 350px;
+  margin: 48px auto 0 auto;
+  padding: 32px 16px 24px 16px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  color: #e15b5b;
+  letter-spacing: 2px;
+}
+
+.timer-display {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #374151;
+  letter-spacing: 3px;
+}
+
+.button-group {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+button {
+  font-size: 1.3rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 12px;
+  background: #e15b5b;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+
+button:hover, button:active {
+  background: #d13a3a;
+}
+
+.mode-label {
+  font-size: 1.2rem;
+  margin-top: 8px;
+  color: #47a36c;
+  letter-spacing: 1px;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px 0 10px 0;
+  background: none;
+  text-align: center;
+}
+
+.footer-text {
+  color: #c9a064;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+/* RWD: 手機單欄、桌機置中 */
+@media (max-width: 480px) {
+  .container {
+    max-width: 98vw;
+    padding: 18vw 3vw 8vw 3vw;
+  }
+  .timer-display {
+    font-size: 2.8rem;
+  }
+  button {
+    font-size: 1.05rem;
+    padding: 8px 14px;
+  }
+}

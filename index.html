@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番茄鐘 Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>番茄鐘</h1>
+    <div id="timer" class="timer-display">25:00</div>
+    <div class="button-group">
+      <button id="start-btn">開始</button>
+      <button id="pause-btn">暫停</button>
+      <button id="reset-btn">重設</button>
+    </div>
+    <div class="mode-label" id="mode-label">工作時間</div>
+  </div>
+  <footer>
+    <div class="footer-text">Lydie</div>
+  </footer>
+  <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+  <script src="main.js"></script>
+</body>
+</html>
