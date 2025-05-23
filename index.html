@@ -15,7 +15,15 @@
       <button id="pause-btn">暫停</button>
       <button id="reset-btn">重設</button>
     </div>
-    <div class="mode-label" id="mode-label">工作時間</div>
+    <div class="mode-label" id="mode-label">專注 25 分鐘</div>
+    <div class="task-section">
+      <div class="task-title">我的任務清單</div>
+      <form id="task-form" autocomplete="off">
+        <input type="text" id="task-input" placeholder="輸入任務並按 Enter" maxlength="32">
+        <button type="submit" id="add-task-btn" title="新增任務">＋</button>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
   </div>
   <footer>
     <div class="footer-text">Lydie</div>
